@@ -10,7 +10,7 @@ RUN npm i
 
 # build srcs
 COPY . .
-RUN npm run build
+RUN npm test && npm run build
 
 EXPOSE 3000
 
